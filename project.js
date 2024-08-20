@@ -1,10 +1,35 @@
-const arrowBtn = document.querySelector(".arrowBtn");
-const customOptionsLists = document.querySelectorAll(".custom-options");
 const Encoding =
     "FblG2bGg2jkPf9DR0Y%2BXAF%2FcnYVLse2mSC4JN3J%2Byl5exmUj5b8M7aCtzJl%2FRE6cyocHqTGwBJgPzkxP1x%2F7XA%3D%3D";
 const Decoding =
     "FblG2bGg2jkPf9DR0Y+XAF/cnYVLse2mSC4JN3J+yl5exmUj5b8M7aCtzJl/RE6cyocHqTGwBJgPzkxP1x/7XA==";
+
+const arrowBtn = document.querySelector(".arrowBtn");
+const customOptionsLists = document.querySelectorAll(".custom-options");
+const selectLists = document.querySelectorAll(".selectlist");
+
+const apiQueryParams = {
+    bgnde: null, // 유기날짜(검색 시작일)
+    endde: null, // 유기날짜(검색 종료일)
+    upkind: null, // 축종코드
+    kind: null, // 품종코드
+    upr_cd: null, // 시도코드
+    org_cd: null, // 시군구코드
+    care_reg_no: null, // 보호소번호
+    state: null, // 상태(전체, 공고중, 보호중)
+    neuter_yn: null, // 중성화 여부
+    pageNo: 1, // 페이지 번호
+    numOfRows: 10, // 페이지당 보여줄 개수
+    _type: "json", // 응답 형식
+};
+
 const _type = "json";
+
+let userInput = {
+    upr_cd: null,
+    org_cd: null,
+    upkind: null,
+    kind: null,
+};
 
 let REGIONDATA;
 let KINDDATA;
@@ -25,7 +50,6 @@ function setDropdownStyle() {
     });
 }
 
-const selectLists = document.querySelectorAll(".selectlist");
 selectLists.forEach(function (element) {
     element.addEventListener("click", function () {
         this.classList.toggle("open");
@@ -270,27 +294,7 @@ async function getRegionData() {
     return regionData;
 }
 
-const apiQueryParams = {
-    bgnde: null, // 유기날짜(검색 시작일)
-    endde: null, // 유기날짜(검색 종료일)
-    upkind: null, // 축종코드
-    kind: null, // 품종코드
-    upr_cd: null, // 시도코드
-    org_cd: null, // 시군구코드
-    care_reg_no: null, // 보호소번호
-    state: null, // 상태(전체, 공고중, 보호중)
-    neuter_yn: null, // 중성화 여부
-    pageNo: 1, // 페이지 번호
-    numOfRows: 10, // 페이지당 보여줄 개수
-    _type: "json", // 응답 형식
-};
 
-let userInput = {
-    upr_cd: null,
-    org_cd: null,
-    upkind: null,
-    kind: null,
-};
 
 function getUserInput() {
     return userInput;

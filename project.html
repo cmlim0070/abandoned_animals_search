@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <script
+            src="https://kit.fontawesome.com/679a9693f7.js"
+            crossorigin="anonymous"
+        ></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Noto+Sans+KR:wght@100..900&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+        />
+        <link rel="stylesheet" href="myreset.css" />
+        <link rel="stylesheet" href="project.css" />
+        <title>데려가냥</title>
+    </head>
+    <body>
+        <div class="header">
+            <div class="logo">
+                <span class="material-symbols-outlined logo"> pets </span>
+                <span class="brandname">데려가냥?</span>
+            </div>
+            <div class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item">Home</li>
+                    <li class="nav__item">Category</li>
+                    <li class="nav__item">About</li>
+                    <li class="nav__item">Contact</li>
+                </ul>
+            </div>
+        </div>
+        <div class="modal-overlay">
+            <div class="modal">
+                <div class="modal__left">
+                    <img
+                        class="modal-image"
+                        src="./img/sample.png"
+                        alt="Animal Image"
+                    />
+                </div>
+                <div class="modal__right">
+                    <div class="desc__title">
+                        <div class="modal-kind">
+                            <span class="label">품종: </span
+                            ><span class="con">시바견</span>
+                        </div>
+                        <div class="modal-period">
+                            <span class="label">보호기간: </span
+                            ><span class="con"></span>
+                        </div>
+                    </div>
+                    <div class="desc__detail">
+                        <div class="modal-species modalitem">
+                            <span class="label">품종: </span
+                            ><span class="con">품종명</span>
+                        </div>
+                        <div class="modal-gender modalitem">
+                            <span class="label">성별: </span
+                            ><span class="con">성별</span>
+                        </div>
+                        <div class="modal-age modalitem">
+                            <span class="label">나이: </span
+                            ><span class="con">나이</span>
+                        </div>
+                        <div class="modal-colorCd modalitem">
+                            <span class="label">색상: </span
+                            ><span class="con">색상</span>
+                        </div>
+                        <div class="modal-weight modalitem">
+                            <span class="label">체중: </span
+                            ><span class="con">체중</span>
+                        </div>
+                        <div class="modal-processState modalitem">
+                            <span class="label">상태: </span
+                            ><span class="con">상태</span>
+                        </div>
+                        <div class="modal-happenDt modalitem">
+                            <span class="label">접수일시: </span
+                            ><span class="con">접수일시</span>
+                        </div>
+                        <div class="modal-happenPlace modalitem">
+                            <span class="label">발견장소: </span
+                            ><span class="con">발견장소</span>
+                        </div>
+                        <div class="modal-specialMark modalitem">
+                            <span class="label">특이사항: </span
+                            ><span class="con">-</span>
+                        </div>
+                        <div class="modal-careNm modalitem">
+                            <span class="label">보호센터: </span
+                            ><span class="con">보호센터</span>
+                        </div>
+                        <div class="modal-chargeNm modalitem">
+                            <span class="label">담당자: </span
+                            ><span class="con">담당자</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="banner">
+            <div class="banner__desc">
+                One more friend <br />
+                Thousands more fun!
+            </div>
+            <img
+                class="dogimg deco"
+                src="img/group-portrait-adorable-puppies 2.svg"
+            />
+            <span class="square1 deco"></span>
+            <span class="square2 deco"></span>
+            <span class="square3 deco"></span>
+            <span class="square4 deco"></span>
+            <span class="square5 deco"></span>
+            <span class="square6 deco"></span>
+            <span class="square7 deco"></span>
+        </div>
+        <div class="section1">
+            <h2>빨리 찾아가세요!</h2>
+            <div class="listCon">
+                <ul class="protect__animal__list"></ul>
+                <div class="pagination__wrap">
+                    <!-- <span class="previous_page" aria-disabled="true">
+                        Previous
+                    </span> -->
+                    <ul class="pagination"></ul>
+                    <!-- <span class="next_page" aria-label="Next"> Next </span> -->
+                </div>
+            </div>
+        </div>
+
+        <div class="section2">
+            <h2>많은 친구들이 엄마 아빠를 구해요!</h2>
+            <div class="listCon">
+                <div class="select-wrapper">
+                    <div class="select-wrapper_1">
+                        <div class="selectlist sido">
+                            <div class="custom-option show">
+                                <span class="selected__highlight"
+                                    >시/도 선택</span
+                                >
+                                <div class="arrow">↓</div>
+                            </div>
+                            <div class="custom-options"></div>
+                        </div>
+                        <div class="selectlist sigungu">
+                            <div class="custom-option show">
+                                <span class="selected__highlight"
+                                    >시/군/구 선택</span
+                                >
+                                <div class="arrow">↓</div>
+                            </div>
+                            <div class="custom-options"></div>
+                        </div>
+                    </div>
+                    <div class="select-wrapper_2">
+                        <div class="selectlist kind">
+                            <div class="custom-option show">
+                                <span class="selected__highlight"
+                                    >개/고양이</span
+                                >
+                                <div class="arrow">↓</div>
+                            </div>
+                            <div class="custom-options"></div>
+                        </div>
+                        <div class="selectlist kindDetail">
+                            <div class="custom-option show">
+                                <span class="selected__highlight">품종</span>
+                                <div class="arrow">↓</div>
+                            </div>
+                            <div class="custom-options"></div>
+                        </div>
+                    </div>
+                </div>
+                <ul class="animal__list"></ul>
+            </div>
+        </div>
+        <span class="material-symbols-outlined arrowBtn">
+            keyboard_double_arrow_up
+        </span>
+    </body>
+    <script type="text/javascript" src="project.js"></script>
+</html>
